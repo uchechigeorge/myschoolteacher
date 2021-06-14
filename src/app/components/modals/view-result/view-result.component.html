@@ -1,0 +1,38 @@
+<app-modal-header title="Edit Result" (dismiss)="dismissModal()"></app-modal-header>
+
+<ion-content class="ion-padding">
+  <app-view-profile-pic [imgSrc]="DP" [canView]="false" [showEditBtn]="false" [userId]="studentId"></app-view-profile-pic>
+  <br>
+  <div class="divider"></div>
+  <br>
+
+  <div *ngIf="isLoading" class="ion-padding ion-text-center">
+    <ion-spinner name="crescent"></ion-spinner>
+  </div>
+
+  <ion-text *ngIf="showError"><h5 class="ion-padding ion-text-center">{{ errMessage }}</h5></ion-text>
+
+
+  <form class="details-form" *ngIf="!isLoading && !showError">
+    
+    <div *ngFor="let input of details">
+      <ion-text class="ion-text-left" *ngIf="input.hasHeader"><h4>{{ input.headerTitle }}</h4></ion-text>
+      <app-edit-details-input #inputs
+        [id]="input.id"
+        [label]="input.label" 
+        [model]="input.model"
+        [type]="input.type"
+        [icon]="input.icon"
+        [noEdit]="input.noEdit"
+        [suffix]="input.suffix"
+        [validators]="input.valiators"
+        [selectMultiple]="input.selectMultiple"
+        [selectOptions]="input.selectOptions"
+        [multipleSelectOptions]="input.multipleSelectOptions"
+        [updateInput]="input.updateInput"
+        (onChangeEvent)="input.inputChange($event)"
+      ></app-edit-details-input>
+      <br><br>
+    </div>
+  </form>
+</ion-content>

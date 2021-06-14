@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "225556090545",
+    "project_id": "myschoolteacher-6580a",
+    "storage_bucket": "myschoolteacher-6580a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:225556090545:android:4cf1198a244024453a9c90",
+        "android_client_info": {
+          "package_name": "com.profeworld.myschoolteacher"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "225556090545-kk973tolm4klp9tr2umbiv5ka4f6nkq6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB8lh5GKW8bfOnYLLSUKvmaYRd5nGsrQwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "225556090545-kk973tolm4klp9tr2umbiv5ka4f6nkq6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

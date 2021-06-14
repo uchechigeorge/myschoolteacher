@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">MySchoolTeacher</string>
+    <string name="title_activity_main">MySchoolTeacher</string>
+    <string name="package_name">com.profeworld.myschoolteacher</string>
+    <string name="custom_url_scheme">com.profeworld.myschoolteacher</string>
+</resources>
